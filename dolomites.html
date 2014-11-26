@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tour the Earth</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="galleria/galleria-1.4.2.js" ></script>
+    <style>.galleria{ width: 45%; height: 50%; background-color: beige }
+        #body {
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h3 style="text-align:center">The Dolomites</h3>
+    </div>
+    <div id="locations">
+        <p style="text-align:center;">The Dolomites</p>
+        <a href="Dolomites.html"><img class="specific" src="Resources/dolomites.jpg" alt="The Dolomites" /></a>
+        <hr />
+        <p style="text-align:center; margin: 5px;">Paris</p>
+        <a href="paris.html"><img class="specific" src="Resources/paris.jpg" alt="Paris" /></a>
+        <hr />
+        <p style="text-align:center; margin: 5px;">Rayong</p>
+        <a href="rayong.html"><img class="specific" src="Resources/rayong.jpg" alt="Rayong Dam" /></a>
+        <hr />
+        <p style="text-align:center; margin-top: -3px;">Romanescu Park</p>
+        <a href="romanescu.html"><img style="margin-bottom: 5px;" class="specific" src="Resources/romania.jpg" alt="Romanescu Park" /></a>
+        <a href="Index.html"><p>Home</p></a>
+    </div>
+    
+    <div id="body" >
+        
+        <div style="border-radius: 10px; margin-left: 20px; display: inline-block" class="galleria">
+            <img style="width: 90%;" src="Resources/dolomites.jpg" />
+            <img style="width: 90%;" src="Resources/Mountdolomite.jpg" />
+            <img style="width: 90%;" src="Resources/dolomites-zsigmondy.jpg" />
+            <img style="width: 90%;" src="Resources/dolomites3.jpg" />
+
+            <script>
+                Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            </script>
+        </div>
+        <div style="float:right; width: 45%;">
+        <h3 style="text-indent: 5%">Basic Info</h3>
+        <ul>
+            <li>Location: North Eastern Italy.</li>
+            <li>Current Time Zone: Central European Time UTC/GMT +1:00 hours</li>
+            <li>Currency Exchange: 1.24 USD = 1 Euro</li>
+        </ul>
+        </div>
+        <p style="text-indent: 5%">
+            Nothing says calm and serene like the great outdoors, and The Dolomites in North Eastern Italy provides just that. This vast                land of this mountain range will bring out the adventurous nature in you. This land mass formed over 2000 million years ago                 in the primordial sea and is over 3,000 meters high. It is locked between 5 valleys: Isarco, Pusteria, Piave, Brent,                    Adige. The mountains provide a great area biking, hiking, and horse riding for you and the family. 
+        </p>
+        <div>
+        <div id="BPackage" style="width: 45%; float: left;">
+            <h4>Basic Package</h4>
+            <ul>
+                <li>Cost: $5,000</li>
+                <li>2 People Package</li>
+                <li>Round Trip</li>
+                <li>3 Day Trip</li>
+                <li>200€ spending cash per day</li>
+                <li>Includes Hotel</li>
+            </ul>
+        </div>
+        <div id="FPackage" style="float: right; width: 45%">
+            <h4>Family Package</h4>
+            <ul>
+                <li>Cost: $8,000</li>
+                <li>4 people package</li>
+                <li>Round Trip</li>
+                <li>3 day trip</li>
+                <li>350€ spending cash per day</li>
+                <li>Hotel, vacation home for extra 500€</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

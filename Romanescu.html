@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tour the Earth</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="galleria/galleria-1.4.2.js" ></script>
+    <style>.galleria{ width: 50%; height: 50%; background-color: beige }
+    
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h3 style="text-align:center">Romanescu park</h3>
+    </div>
+    <div id="locations">
+        <p style="text-align:center;">The Dolomites</p>
+        <a href="Dolomites.html"><img class="specific" src="Resources/dolomites.jpg" alt="The Dolomites" /></a>
+        <hr />
+        <p style="text-align:center; margin: 5px;">Paris</p>
+        <a href="paris.html"><img class="specific" src="Resources/paris.jpg" alt="Paris" /></a>
+        <hr />
+        <p style="text-align:center; margin: 5px;">Rayong</p>
+        <a href="rayong.html"><img class="specific" src="Resources/rayong.jpg" alt="Rayong Dam" /></a>
+        <hr />
+        <p style="text-align:center; margin-top: -3px;">Romanescu Park</p>
+        <a href="romanescu.html"><img style="margin-bottom: 5px;" class="specific" src="Resources/romania.jpg" alt="Romanescu Park" /></a>
+        <a href="Index.html"><p>Home</p></a>
+    </div>
+    <div id="body">
+        <div style="border-radius: 10px; margin-left: 20px; display: inline-block" class="galleria">
+            <img style="width: 90%;" src="Resources/RomanescuBridge.jpg" />
+            <img style="width: 90%;" src="Resources/Romanescu.jpg" />
+            <img style="width: 90%;" src="Resources/Romania (2).jpg" />
+            <img style="width: 90%;" src="Resources/Romania.jpg" />
+            <img style="width: 90%;" src="Resources/Romany.jpg" />
+
+            <script>
+                Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            </script>
+        </div>
+        <div style="float: right; width: 45%;" >
+            <h3>Basic Info</h3>
+        <ul>
+            <li>Location: Craiova, Romania</li>
+            <li>Current Time Zone: Eastern European Time +2:00 hours</li>
+            <li>Currency Exchange: 0.28 USD = 1 Romanian Leu</li>
+        </ul>
+        </div>
+        <p style="text-indent: 5%">Located in one of the five major cities in Romania, this park suppresses it all, leaving a tranquil visit. Began in 1901, created by 3 people, spent 2 years planting 50,000 seedlings of trees and shrubs; many of them not adapted to the environment. It began to take shape with its lake and islands, the bridges and the waterfalls, to create one of the most beautiful parks in the world. This is the second largest parks in Europe, and contains the biggest racecourse in the Balkan area. It was finally fenced off in 1956 but you are free to enter and explore.</p>
+        <div>
+            <div id="BPackage" style="width: 45%; float: left;">
+                <h4>Basic Package</h4>
+                <ul>
+                    <li>Cost: $3,500</li>
+                    <li>2 People Package</li>
+                    <li>Round Trip</li>
+                    <li>3 Day Trip</li>
+                    <li>1068.03 ROM (Romanian Leu) per day</li>
+                    <li>Includes Hotel</li>
+                </ul>
+            </div>
+            <div id="FPackage" style="float: right; width: 45%">
+                <h4>Family Package</h4>
+                <ul>
+                    <li>Cost: $6,000</li>
+                    <li>4 people package</li>
+                    <li>Round Trip</li>
+                    <li>3 day trip</li>
+                    <li>2000 ROM spending cash per day</li>
+                    <li>Hotel</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

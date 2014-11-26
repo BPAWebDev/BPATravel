@@ -1,0 +1,71 @@
+<settings>
+  <General_Properties>
+    <componentWidth value="100"/>
+    <componentHeight value="100"/>
+    <appsize value="100"/>
+    <showInfo value="false"/>
+    <cssStyle value="/assets/css/style.css"/>
+    <skins value="/assets/skins/skin1.xml"/>
+    <useCustomIcons value="true"/>
+    <embedFonts value="true"/>
+    <showAbout value="true"/>
+    <defaultLocation value=""/>
+    <iconsFolder value="/assets/icons/"/>
+	<preloader value="/assets/preloaders/redstripes.swf"/>
+  </General_Properties> 
+  <Tween_Properties>
+    <tweenTime value="1"/>
+    <tweenMotion value="Circular"/>
+    <tweenEase value="easeInOut"/>
+    <direction value="horizontal"/>
+  </Tween_Properties>
+  <Search_Window>
+    <bgColor value="14540253"/>
+    <bgCornerRadius value="0"/>
+    <windowWidth value="278"/>
+    <windowHeight value="278"/>
+    <searchSkin value="assets/skins/searchSkin1.xml"/>
+    <bgAlpha value="1"/>
+  </Search_Window>
+  <Item_Positions>
+<offsetX value="0"/>
+    <offsetY value="0"/> 
+    <locationX value="105"/>
+    <locationY value="80"/>
+    <gradeX value="56"/>
+    <gradeY value="110"/>
+    <iconX value="20"/>
+    <iconY value="12"/>
+    <infoX value="0"/>
+    <infoY value="174"/>
+    <dayX value="56"/>
+    <dayY value="210"/>
+  </Item_Positions>
+   <Background_Properties>
+    <backgroundImage value="assets/backgroundImages/weather.png"/>
+   <fillType value="image"/>
+    <backgroundFitting value="repeat"/>
+    <backgroundColor1 value=""/>
+    <backgroundColor2 value=""/>
+    <backgroundAlpha value="1"/>
+    <bgCornerRadius value="0"/>
+    <gradientRotation value="0"/>
+    <gradientRatio value="0"/>
+    <gradientPosX value="0"/>
+    <gradientPosY value="0"/>
+    <useShade value="false"/>
+    <shadeColor value="0x000000"/>
+    <shadeAlpha value="1"/>
+    <shadeRatio value="100"/>
+    <shadeWidth value="600"/>
+    <shadeHeight value="300"/>
+  </Background_Properties>
+   <Shade_Properties>
+    <useShade value="false"/>
+    <shadeColor value="0x000000"/>
+    <shadeAlpha value="0.4"/>
+    <shadeRatio value="161"/>
+    <shadeWidth value="-94"/>
+    <shadeHeight value="207"/>
+  </Shade_Properties>
+</settings>

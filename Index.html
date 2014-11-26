@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tour the Earth</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="galleria/galleria-1.4.2.js" ></script>
+    <style>.galleria{ width: 70%; height: 100%; background-color: beige; }
+            #body {
+                height: 500px;
+            }
+</style>
+</head>
+<body>
+    <div id="header">
+        <h3 style="text-align:center;">Wonders of the world!</h3>
+    </div>
+    <div id="locations">
+        <p style="text-align:center;">The Dolomites</p>
+        <a href="Dolomites.html"><img class="specific" src="Resources/dolomites.jpg" alt="The Dolomites" /></a>
+        <hr />
+        <p style="text-align:center; margin: 5px;">Paris</p>
+        <a href="paris.html"><img class="specific" src="Resources/paris.jpg" alt="Paris" /></a>
+        <hr />
+        <p style="text-align:center; margin: 5px;">Rayong</p>
+        <a href="rayong.html"><img class="specific" src="Resources/rayong.jpg" alt="Rayong Dam" /></a>
+        <hr />
+        <p style="text-align:center; margin-top: -3px;">Romanescu Park</p>
+        <a href="romanescu.html"><img style="margin-bottom: 5px;" class="specific" src="Resources/romania.jpg" alt="Romanescu Park" /></a>
+    </div>
+    <div id="body">
+        <div style="border-radius: 10px; margin-left: 20px; display: inline-block" class="galleria">
+            <img style="width: 90%;" src="Resources/dolomites.jpg" />
+            <img style="width: 90%;" src="Resources/paris.jpg" />
+            <img style="width: 90%;" src="Resources/rayong.jpg" />
+            <img style="width: 90%;" src="Resources/romany.jpg" />
+
+            <script>
+                Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            </script>
+        </div>
+        <div style="float: right; display: inline-block; width: 25%;">
+        <h3> Welcome!</h3>
+        <p>Want to relax and re-energize? Feeling explorative? Just want to get out of the house and make some memories that will last a       lifetime? Our tours around the world will give you something you will never forget! Our tours in Paris will leave you speechless of the architecture. Our tours in the Dolomites will leave you gawking at the expansive mountains. The Rayong Dam will make you shake in amazement. And the tour to Romanescu Park will give you the most calming moments of your life! Take a journey around the world today! </p>
+        <a href="aboutus.html"><p style="float: right">About us</p></a>
+        </div>
+    </div>
+</body>
+</html>
