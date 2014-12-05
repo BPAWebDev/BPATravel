@@ -13,7 +13,9 @@
     height: 300px;
     position:fixed;
     visibility: hidden;
-    background: linear-gradient(black 75%, white);
+    background-color: black;
+    border: 0.5em solid black;
+    opacity: 0.9; 
     color: white;
     padding-left: -1.5%;
     list-style-position: hanging;
@@ -27,13 +29,13 @@
 
 
 #photoBox {
+    opacity: 0.9;
     visibility: hidden;
     background-color: black;
     position: fixed;
     border-radius: 5px;
-    margin-left: 200px;
+    margin-left: 13.5%;
     padding: 1%;
-    background: radial-gradient(white, black);
     height: 150px;
 }
 #LMenu  a:link {
@@ -45,6 +47,7 @@
     color: white;
 }
 #header {
+    opacity: 0.9;
     vertical-align: middle;
     padding: 10px;
     font-size: 1em;
@@ -89,8 +92,9 @@ div a p {
     margin-left: 15%;
     height: 800px;
     width: 65%;
-    background-color: beige;
+    background-color: whitesmoke;
     border-radius: 10px;
     padding: 2%;
-    background: radial-gradient(beige 60%, lightblue);
+    background: radial-gradient(white 75%, lightblue);
+
 }
