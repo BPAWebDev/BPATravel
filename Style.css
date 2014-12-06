@@ -45,13 +45,14 @@
     color: white;
 }
 #header {
-    padding: .7%;
+    vertical-align: middle;
+    padding: 10px;
     font-size: 1em;
     background-color: beige;
     border-radius: 5px;
     list-style: none;
     margin-bottom: 10px;
-    width: 100%;
+    width: 200px;
     height: 25px;
     background-color: black;
     color: white;
