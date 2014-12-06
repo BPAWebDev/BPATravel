@@ -2,18 +2,59 @@
     background-image: url(Resources/background.jpg);
     background-attachment: fixed;
     background-size: cover;
+    padding: 0;
+}
+.galleria {
+    float: right;
 
 }
+#LMenu {
+    width: 200px;
+    height: 300px;
+    position:fixed;
+    visibility: hidden;
+    background: linear-gradient(black 75%, white);
+    color: white;
+    padding-left: -1.5%;
+    list-style-position: hanging;
+    border-radius: 10px;
+    margin-top: -.5%;
+}
+#BoxImage {
+    visibility: hidden;
+
+}
+
+
+#photoBox {
+    visibility: hidden;
+    background-color: black;
+    position: fixed;
+    border-radius: 5px;
+    margin-left: 200px;
+    padding: 1%;
+    background: radial-gradient(white, black);
+    height: 150px;
+}
+    a:link {
+    text-decoration: none;
+    color: white;
+    
+    }
+a:visited {
+    color: white;
+}
 #header {
+    padding: .7%;
     font-size: 1em;
     background-color: beige;
     border-radius: 5px;
-    margin-top: -20px;
+    list-style: none;
     margin-bottom: 10px;
     width: 100%;
-    height: 25%;
-    background: linear-gradient(beige 70%, lightblue);
-    background: linear-gradient(to top, lightblue 10%);
+    height: 25px;
+    background-color: black;
+    color: white;
 }
 #locations {
     width: 12%;

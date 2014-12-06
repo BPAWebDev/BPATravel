@@ -5,27 +5,60 @@
     <link rel="stylesheet" type="text/css" href="Style.css" />
     <script src="jquery-1.11.1.min.js"></script>
     <script src="galleria/galleria-1.4.2.js" ></script>
-    <style>.galleria{ width: 50%; height: 50%; background-color: beige }
+    <script>
+    function openL(id) {
+        document.getElementById(id).style.visibility = 'visible';
+
+
+    }
+    function closeL(id) {
+        document.getElementById(id).style.visibility = 'hidden';
+
+    }
+    function imgUp(id) {
+        if (id == "imgDolomites") {
+            document.getElementById("BoxImage").src = 'Resources/dolomites.jpg';
+        } else if (id == "imgParis") {
+            document.getElementById("BoxImage").src = 'Resources/paris.jpg'
+        } else if (id == "imgRayong") {
+            document.getElementById("BoxImage").src = 'Resources/Rayong.jpg'
+        } else if (id == "imgRoman") {
+            document.getElementById("BoxImage").src = 'Resources/Romania.jpg'
+        }
+    }
+    function imgDown(id) {
+        document.getElementById("BoxImage").src = '';
+    }
+    </script>
+
+    <style>.galleria{ width: 50%; height: 50%; background-color: beige; float:right; }
     
     </style>
 </head>
 <body>
     <div id="header">
-        <h3 style="text-align:center">Romanescu park</h3>
+        <div style="width: 50px; height: 50px;" onmouseover="openL('LMenu')" onmouseout="closeL('LMenu')">
+            <li>Locations</li>
+        </div>
+
     </div>
-    <div id="locations">
-        <p style="text-align:center;">The Dolomites</p>
-        <a href="dolomites.html"><img class="specific" src="Resources/dolomites.jpg" alt="The Dolomites" /></a>
-        <hr />
-        <p style="text-align:center; margin: 5px;">Paris</p>
-        <a href="Paris.html"><img class="specific" src="Resources/paris.jpg" alt="Paris" /></a>
-        <hr />
-        <p style="text-align:center; margin: 5px;">Rayong</p>
-        <a href="Rayong.html"><img class="specific" src="Resources/Rayong.jpg" alt="Rayong Dam" /></a>
-        <hr />
-        <p style="text-align:center; margin-top: -3px;">Romanescu Park</p>
-        <a href="Romanescu.html"><img style="margin-bottom: 5px;" class="specific" src="Resources/Romania.jpg" alt="Romanescu Park" /></a>
-        <a href="index.html"><p>Home</p></a>
+    <div id="LMenu" onmouseover="openL('LMenu')" onmouseout="closeL('LMenu')">
+        <ul style="list-style-type: none;">
+            <li onmouseover="imgUp('imgDolomites'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('BoxImage'); closeL('photoBox')"><a href="dolomites.html">The Dolomites</a></li>
+            <hr />
+            <li onmouseover="imgUp('imgParis'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('BoxImage'); closeL('photoBox')"><a href="Paris.html">Paris</a></li>
+            <hr />
+            <li onmouseover="imgUp('imgRayong'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('BoxImage'); closeL('photoBox')"><a href="Rayong.html">Rayong</a></li>
+            <hr />
+            <li onmouseover="imgUp('imgRoman'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('BoxImage'); closeL('photoBox')"><a href="Rayong.html"><a href="Romanescu.html">Romanescu</a></a></li>
+            <hr />
+            <li><a href="index.html">Home</a></li>
+       </ul>
+
+
+    </div>
+    <div id="photoBox" onmouseover="imgUp('BoxImage'); openL('LMenu'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('LMenu'); closeL('BoxImage'); closeL('photoBox')">
+        <img style="height: 75%;" id="BoxImage" />
     </div>
     <div id="body">
         <div style="border-radius: 10px; margin-left: 20px; display: inline-block" class="galleria">
