@@ -1,0 +1,166 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quote your trip</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link rel="stylesheet" type="text/css" href="Mobile.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+        function TQuote() {
+            var subTotal = 0;
+            var total;
+            if (document.getElementById("HQ1").checked) {
+                subTotal += 50;
+            }
+            else if (document.getElementById("HQ2").checked) {
+                subTotal += 100;
+            }
+            else if (document.getElementById("HQ3").checked) {
+                subTotal += 150;
+            }
+            else if (document.getElementById("HQ4").checked) {
+                subTotal += 200;
+            }
+            else if (document.getElementById("HQ5").checked) {
+                subTotal += 250;
+            }
+            subTotal *= document.getElementById("people").value;
+            if (RDolomites.checked) {
+                subTotal *= 1.2;
+            }
+            else if (RParis.checked) {
+                subTotal *= 2;
+            }
+            else if (RRayong.checked) {
+                subTotal *= 1.5;
+            }
+            else if (RRomanescu.checked) {
+                subTotal *= 1.6;
+            }
+            total = subTotal * document.getElementById("TLength").value;
+            document.getElementById("Price").innerHTML = '$'+total;
+        }
+    </script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="galleria/galleria-1.4.2.js"></script>
+    <script>
+        function openL(id) {
+            document.getElementById(id).style.visibility = 'visible';
+
+
+        }
+        function closeL(id) {
+            document.getElementById(id).style.visibility = 'hidden';
+
+        }
+        function imgUp(id) {
+            if (id == "imgDolomites") {
+                document.getElementById("BoxImage").src = 'Resources/dolomites.jpg';
+            } else if (id == "imgParis") {
+                document.getElementById("BoxImage").src = 'Resources/paris.jpg'
+            } else if (id == "imgRayong") {
+                document.getElementById("BoxImage").src = 'Resources/Rayong.jpg'
+            } else if (id == "imgRoman") {
+                document.getElementById("BoxImage").src = 'Resources/Romania.jpg'
+            }
+        }
+        function imgDown(id) {
+            document.getElementById("BoxImage").src = '';
+        }
+
+
+
+    </script>
+    <style>
+        .galleria {
+            width: 50%;
+            height: 60%;
+            position: relative;
+            float: right;
+        }
+
+        #body {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div style="display:inline-block" id="header">
+        <div style="width: 50px; height: 50px;" onmouseover="openL('LMenu')" onmouseout="closeL('LMenu')">
+            <li>Locations</li>
+        </div>
+
+    </div>
+    <!--code for the clock-->
+    <div id="WClock" style="margin: 0px 0px 0px; float: right; display: inline-block; text-align: center;">
+        <noscript>
+            <div style="display: inline-block; padding: 2px 4px; margin: 0px 0px 15px; border: 1px solid rgb(204, 204, 204); text-align: center; background-color: transparent;"><a href="http://localtimes.info/difference" style="text-decoration: none; font-size: 13px; color: rgb(0, 0, 0);">World Clock</a></div>
+        </noscript>
+        <script type="text/javascript" src="http://localtimes.info/world_clock2.php?continent=Europe&country=France&city=Paris&cp1_Hex=000000&cp2_Hex=FFFFFF&cp3_Hex=000000&fwdt=104&ham=0&hbg=1&hfg=0&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=21000&lcid=THXX0002,ITXX0007,FRXX0076,ROXX0007"></script>
+    </div>
+    <div id="LMenu" onmouseover="openL('LMenu')" onmouseout="closeL('LMenu'); closeL('photoBox'); closeL('BoxImage');">
+        <ul style="list-style-type: none;">
+            <li onmouseover="imgUp('imgDolomites'); openL('photoBox'); openL('BoxImage')"> <a href="dolomites.html">The Dolomites</a></li>
+            <hr />
+            <li onmouseover="imgUp('imgParis'); openL('photoBox'); openL('BoxImage')"> <a href="Paris.html">Paris</a></li>
+            <hr />
+            <li onmouseover="imgUp('imgRayong'); openL('photoBox'); openL('BoxImage')"> <a href="Rayong.html">Rayong</a></li>
+            <hr />
+            <li onmouseover="imgUp('imgRoman'); openL('photoBox'); openL('BoxImage')">
+                <a href="Rayong.html"><a href="Romanescu.html">Romanescu</a></a>
+            </li>
+        </ul>
+
+
+    </div>
+    <div id="photoBox" onmouseover="imgUp('BoxImage'); openL('LMenu'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('LMenu'); closeL('BoxImage'); closeL('photoBox')">
+        <img style="height: 75%;" id="BoxImage" />
+    </div>
+
+    <div id="body">
+        <p>Answer the following questions for your quote:</p>
+        <div style="display:inline-block; margin-left: 2%;">
+            <form action="TQuote()">
+                <li>Location:</li>
+                <input type="radio" name="destination" id="RDolomites" value="Dolomites" />The Dolomites
+                <br />
+                <input type="radio" name="destination" id="RParis" value="Paris" />Paris
+                <br />
+                <input type="radio" name="destination" id="RRayong" value="Rayong" />Rayong
+                <br />
+                <input type="radio" name="destination" id="RRomanescu" value="Romanescu" />Romanescu
+                <br />
+                <br />
+                <li>Number of People:</li>
+                <input type="text" id="people" name="Amount" />
+                <br />
+                <br />
+                <li>Hotel Quality:</li>
+                <input type="radio" id="HQ1" name="Hotel" value="1" />
+                &#9733 &#9734 &#9734 &#9734 &#9734
+                <br />
+                <input type="radio" id="HQ2" name="Hotel" value="2" />
+                &#9733 &#9733 &#9734 &#9734 &#9734
+                <br />
+                <input type="radio" id="HQ3" name="Hotel" value="3" />
+                &#9733 &#9733 &#9733 &#9734 &#9734
+                <br />
+                <input type="radio" id="HQ4" name="Hotel" value="4" />
+                &#9733 &#9733 &#9733 &#9733 &#9734
+                <br />
+                <input type="radio" id="HQ5" name="Hotel" value="5" />
+                &#9733 &#9733 &#9733 &#9733 &#9733
+                <br />
+                <br />
+                <li>Length of Trip:</li>
+                <input type="text" id="TLength" name="TLength" />
+                <br />
+                <button type="button" onclick="TQuote()"> Get Your Quote</button>
+            </form>
+        </div>
+        <li id="Price" style="display:inline-block;list-style:none;clear: left; font-size: 3em; color: green;">$</li>
+    </div>
+
+</body>
+</html>
