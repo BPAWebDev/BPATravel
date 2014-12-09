@@ -1,6 +1,6 @@
 ﻿@media screen and (max-device-width: 800px){
     p {
-        font-size: 2em !important;
+        font-size: 1em !important;
     }
     .galleria {
         display: none !important;
