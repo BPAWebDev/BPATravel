@@ -6,6 +6,7 @@
     <script src="jquery-1.11.1.min.js"></script>
     <script src="galleria/galleria-1.4.2.js"></script>
     <script>
+        mobileCheck();
         function mobileCheck() {
             var width = screen.width;
             var height = screen.height;
@@ -60,6 +61,7 @@
     </style>
 </head>
 <body>
+    
     <div style="display:inline-block" id="header">
         <div style="width: 50px; height: 50px;" onmouseover="openL('LMenu')" onmouseout="closeL('LMenu')">
             <li>Locations</li>
