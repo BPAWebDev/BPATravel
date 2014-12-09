@@ -6,6 +6,16 @@
     <script src="jquery-1.11.1.min.js"></script>
     <script src="galleria/galleria-1.4.2.js"></script>
     <script>
+        var width = screen.width;
+        var body = document.getElementById("body");
+        if (width <= 800) {
+            body.style.width = '';
+            body.style.height = '';
+            body.style.backgroundColor = '';
+            
+        }
+    </script>
+    <script>
         function openL(id) {
             document.getElementById(id).style.visibility = 'visible';
 
@@ -29,6 +39,9 @@
         function imgDown(id) {
             document.getElementById("BoxImage").src = '';
         }
+        
+        
+        
     </script>
     <style>
         .galleria {
