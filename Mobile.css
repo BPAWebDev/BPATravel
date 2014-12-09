@@ -21,6 +21,9 @@
         height: 1200px !important;
         width: 100% !important;
         margin-left: 0% !important;
+        background:none !important;
+        background-color: none !important;
+        color: white !important;
     }
     #photoBox {
         display: none !important;
