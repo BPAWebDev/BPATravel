@@ -110,6 +110,8 @@
             <li onmouseover="imgUp('imgRoman'); openL('photoBox'); openL('BoxImage')">
                 <a href="Rayong.html"><a href="Romanescu.html">Romanescu</a></a>
             </li>
+            <hr />
+            <li><a href="index.html">Home</a></li>
         </ul>
 
 
@@ -117,11 +119,17 @@
     <div id="photoBox" onmouseover="imgUp('BoxImage'); openL('LMenu'); openL('photoBox'); openL('BoxImage')" onmouseout="closeL('LMenu'); closeL('BoxImage'); closeL('photoBox')">
         <img style="height: 75%;" id="BoxImage" />
     </div>
-
+    
     <div id="body">
         <p>Answer the following questions for your quote:</p>
         <div style="display:inline-block; margin-left: 2%;">
             <form action="TQuote()">
+                <?php 
+                    
+                    
+                    ?>
+                <li>Email:</li>
+                <input type="text" name="email" id="QMail" /><input type="checkbox" name="sendEmail" id="SEmail" /> <li>Email Quote</li>
                 <li>Location:</li>
                 <input type="radio" name="destination" id="RDolomites" value="Dolomites" />The Dolomites
                 <br />
