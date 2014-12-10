@@ -11,6 +11,9 @@
     #body div {
         width: 100% !important;
     }
+    #header {
+        width: 100%;
+    }
     #body {
         height: 1200px !important;
         width: 100% !important;
