@@ -1,0 +1,20 @@
+﻿@media screen and (max-width: 600px){
+    .galleria {
+        display: none !important;
+    }
+    #body div {
+        width: 100% !important;
+    }
+    #body {
+        height: 1200px !important;
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
+    #photoBox {
+        display: none !important;
+    }
+    #BoxImage {
+        display: none !important;
+    }
+
+}
