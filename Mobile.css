@@ -5,6 +5,9 @@
     .galleria {
         display: none !important;
     }
+    #LMenu {
+        width: 100% !important;
+    }
     #body div {
         width: 100% !important;
     }
