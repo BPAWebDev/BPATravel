@@ -12,10 +12,10 @@
         width: 100% !important;
     }
     #header {
-        width: 100%;
+        width: 100% !important;
     }
     #WClock {
-        display: none;
+        display: none !important;
     }
     #body {
         height: 1200px !important;
